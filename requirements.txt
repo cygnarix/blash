@@ -1,0 +1,8 @@
+Pillow
+google
+google.generativeai
+pigment
+PyQt6
+ctypes
+qtawesome
+openai

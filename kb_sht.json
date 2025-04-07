@@ -1,0 +1,17 @@
+{
+  "screenshot": {
+    "keys": ["CONTROL", "MENU"],
+    "trigger_on": "second_modifier"
+  },
+  "f2_mode": {
+    "modifier": "F2",
+    "actions": {
+      "J": "toggle_visibility",
+      "RETURN": "quit_app",
+      "UP": "move_up",
+      "DOWN": "move_down",
+      "LEFT": "move_left",
+      "RIGHT": "move_right"
+    }
+  }
+}
