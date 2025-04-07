@@ -1,42 +1,94 @@
-# 🚀 Blash v1.0.0
+# Blash
 
-**Blash** is a stealthy, smart, and fully customizable AI coding assistant built for *educational and research purposes*. It’s designed to assist during mock interviews, personal practice, or local projects—delivering fast, AI-powered coding help **without being intrusive**.
+## Note: This is only version 1.0.0, updates coming soon!
 
-> 🧠 Think of Blash as a smarter, more discreet, open-source alternative to Interview Coder—with deeper customization, better invisibility, and full control.
+**Blash** is a better, open-source alternative to Interview Coder — designed to be stealthy, customizable, and powerful. It offers real-time coding assistance with support for multiple AI models, and it works invisibly with many popular apps — including the latest version of Zoom (which Interview Coder cannot do).
 
----
+## 🚀 Features
 
-## 🌟 Features
-
-- 🎨 **Fully Customizable**  
-  Choose between AI models like GPT or Gemini—Blash is model-agnostic. Simply update your API keys in `gemini.py` or `gpt.py`.
-
-- 🫥 **Invisible to Most Screen Sharing Apps**  
-  Including the latest versions of Zoom, Google Meet, MS Teams, and more. Where Interview Coder gets caught, Blash stays silent.
-
-- ⚡ **Lightweight and Fast**  
-  Minimal UI, fast responses, and discreet overlays. No bloat, just performance.
-
-- 🖥️ **On-Screen AI Help**  
-  Take a screenshot of your code or prompt, and Blash will return smart suggestions directly on your screen.
+- 🧠 **Customizable AI Model Support** (Gemini or GPT)
+- 🫥 **Stealth Mode** – Invisible in EVERY screen capturing app, including the LATEST verion of Zoom (Which Interview Coder isn't)
+- 🎛️ **Configurable Shortcuts**
+- 🔧 Easy to modify and extend
+- 💡 Open source and community-driven
 
 ---
 
 ## 🧩 Keyboard Shortcuts
 
-| Shortcut              | Action                |
-|-----------------------|------------------------|
-| `Ctrl + Alt`          | Take screenshot        |
-| `F2 + Arrow Keys`     | Move overlay window    |
-| `F2 + J`              | Show/Hide assistant    |
-| `F2 + Enter`          | Exit Blash             |
+| Shortcut               | Action             |
+|------------------------|--------------------|
+| `Ctrl + Alt`           | Take screenshot    |
+| `F2 + Arrow Keys`      | Move overlay       |
+| `F2 + J`               | Show/Hide window   |
+| `F2 + Enter`           | Exit Blash         |
 
 ---
 
-## 🔧 Setup & Configuration
+## ⚙️ Setup & Configuration
 
-1. **Clone the repo**
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/blash.git
+cd blash
 
-   ```bash
-   git clone https://github.com/yourusername/blash.git
-   cd blash
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the app
+python main.py
+```
+
+---
+
+## 🛠️ Configuration Guide
+
+After first launch, make sure to configure the following files:
+
+- `gemini.py`: Set your **Google Gemini API key** and configuration
+- `gpt.py`: Set your **OpenAI API key** and model preferences
+- `ss_mem.py`: Select the model (`gpt` or `gemini`)
+
+### Example:
+
+To use OpenAI GPT:
+
+1. Open `ss_mem.py` and set:
+   ```python
+   MODEL_SELECTION = 'gpt'
+   ```
+
+2. Open `gpt.py` and update:
+   ```python
+   YOUR_API_KEY_HERE = 'your-openai-key-here'
+   ```
+
+To use Google Gemini:
+
+1. Open `ss_mem.py` and set:
+   ```python
+   MODEL = 'gemini'
+   ```
+
+2. Open `gemini.py` and update:
+   ```python
+   YOUR_API_KEY_HERE = 'your-gemini-key-here' # Go to https://aistudio.google.com/app/apikey to get 1 for free
+   ```
+
+---
+
+## 📦 Current Version
+
+**v1.0.0**
+
+---
+
+## 🔐 Disclaimer
+
+Blash is intended for ethical use only. Using AI tools during live interviews may violate terms or policies of hiring organizations. Use responsibly.
+
+---
+
+## 📬 Contributions
+
+Contributions are welcome! Fork the repo, submit a PR, or open an issue to suggest improvements.
