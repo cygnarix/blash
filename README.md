@@ -29,7 +29,7 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/blash.git
+git clone https://github.com/cygnarix/blash.git
 cd blash
 
 # Install dependencies
